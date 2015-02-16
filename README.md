@@ -24,3 +24,7 @@ import "github.com/andrepolischuk/numd-go"
 price := numd.Decline(24, "рубль", "рубля", "рублей") // 24 рубля
 length := numd.Decline(51, "метр", "метра", "метров") // 51 метр
 ```
+
+## License
+
+  MIT
