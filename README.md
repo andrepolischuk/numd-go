@@ -1,6 +1,6 @@
-# Numd
+# numd
 
-  Склонение слов после числительных
+  > Склонение слов после числительных
 
   [Docs](https://godoc.org/github.com/andrepolischuk/numd-go)
 
