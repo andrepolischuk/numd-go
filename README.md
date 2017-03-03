@@ -1,4 +1,4 @@
-# numd
+# numd [![Build Status][travis-image]][travis-url]
 
 > Склонение слов после числительных
 
@@ -28,3 +28,6 @@ length := numd.Decline(51, "метр", "метра", "метров") // 51 ме�
 ## License
 
 MIT
+
+[travis-url]: https://travis-ci.org/andrepolischuk/numd-go
+[travis-image]: https://travis-ci.org/andrepolischuk/numd-go.svg?branch=master
