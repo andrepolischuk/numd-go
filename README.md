@@ -1,28 +1,29 @@
 # numd [![Build Status][travis-image]][travis-url]
 
-> Склонение слов после числительных
+> Pluralize a word
 
 [Docs](https://godoc.org/github.com/andrepolischuk/numd-go)
 
-* 1 рубль
-* 2 рубля
-* 5 рублей
+* 1 dollar, 5 dollars
+* 1 рубль, 2 рубля, 5 рублей
 
-## Установка
+## Install
 
-```go
-import "github.com/andrepolischuk/numd-go"
+```sh
+go get github.com/andrepolischuk/numd-go
 ```
 
-## API
-
-### numd.Decline(num, nominative, genitiveSingular, genitivePlural)
-
-Получаем слово в нужном склонении
+## Usage
 
 ```go
-price := numd.Decline(24, "рубль", "рубля", "рублей") // 24 рубля
-length := numd.Decline(51, "метр", "метра", "метров") // 51 метр
+package main
+
+import "github.com/andrepolischuk/numd-go"
+
+func main() {
+  priceInRub := numd.Decline(24, "рубль", "рубля", "рублей") // 24 рубля
+  priceInUsd := numd.Decline(51, "dollar", "dollars") // 51 dollars
+}
 ```
 
 ## License
